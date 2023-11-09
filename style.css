@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: f1;
+    src: url(Heavitas.ttf);
+}
+
+
+@font-face {
+    font-family: f2;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+overflow: wrap;
+
+
+}
+
+
+h1,
+h2 {
+
+
+
+
+    font-family: f1;
+
+    font-weight: 800;
+
+    color: #000;
+
+    text-transform: uppercase;
+
+}
+
+.wrapper {
+
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+main {
+
+display: block;
+
+background-color: #fff;
+}
+
+.container{
+
+animation: pericles 5s ease-in-out;
+
+animation-timeline: view();
+
+animation-range: cover 0 cover  40%;
+
+width: 100%;
+
+max-width: 760px;
+
+margin: 0 auto;
+
+padding: 0 25px;
+
+
+}
+
+section.modulo p{
+
+margin-bottom: 30px;
+text-align: justify;
+font-size: 1.3em;
+
+}
+
+section.modulo h2{
+
+
+    background-color: rgb(160, 82, 233);
+margin-bottom: 30px;
+font-size: 30px;
+letter-spacing: .5em;
+text-align: center;
+
+border-radius: 10px;
+padding: 10px;
+}
+
+section.modulo.content{
+
+padding: 40px 0;
+
+background: #ffffff;
+
+}
+
+section.modulo.parallax{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+height: 100vh !important;
+
+width: 100%;
+
+overflow: hidden;
+
+position: relative;
+
+background-position: 50% 50%;
+
+background-repeat: no-repeat;
+
+background-size: cover; 
+
+background-attachment: fixed;
+
+}
+
+section.modulo.parallax h1{
+
+color: rgb(252, 241, 227);
+
+text-shadow: 7px 7px 7px  rgba(0, 0, 0, 0.566);
+
+text-align: center;
+
+font-size: 75px;
+
+z-index: 100;
+
+}
+
+section.modulo.parallax::after{
+
+content: "";
+
+width: 100% ;
+
+height: 100%;
+
+position: absolute;
+
+z-index: 10;
+
+background: linear-gradient(to bottom, rgba(0,0,0,0)  0, rgba(0,0,0,0) 30%, #000000  100% );
+
+
+
+}
+
+
+section.modulo.parallax-1{
+
+background-image: url("cake-1971552_1280.jpg");}
+
+section.modulo.parallax-2{
+    background-image: url("beverage-1869598_1280.jpg");}
+
+section.modulo.parallax-3{
+    background-image: url("coffee-5635765_1280.jpg");
+    }
+    
+@keyframes pericles {
+
+from{
+
+    translate: -100vW 0;
+
+color: brown;
+
+opacity: 0;
+}
+    
+to{
+
+translate: 0 0;
+
+color: green;
+
+opacity: 1;
+
+}
+
+
+
+}
+
+@media all and (max-width: 860px){
+
+    section.modulo.parallax h1{
+
+        color: rgb(252, 241, 227);
+        
+        text-shadow: 5px 5px 7px  rgba(0, 0, 0, 0.566);
+        
+        text-align: center;
+        
+        font-size: 3em;
+        
+        z-index: 100;
+        
+        }
+
+        section.modulo p{
+
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1em;
+            
+            }
+
+        section.modulo.content{
+
+        width: 90%;
+        
+
+        }
+
+
+        section.modulo h2{
+
+            margin-bottom: 30px;
+            font-size: 30px;
+            letter-spacing: .5em;
+            text-align: center;
+            }
+
+
+
+            section.modulo.parallax-1{
+
+                background-image: url(coffee-839233_1280.jpg);}
+
+        
+}
+
+
+p{
+
+font-family: f2;
+
+
+}
+
+footer{
+
+background-color: brown;
+
+
+
+}
